@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator On alert</title>
+  </head>
+  <body>
+    <script>
+      var firstname = prompt("Enter tour first name");
+      var fathername = prompt("Enter your father name");
+      var firstvalue = Number(prompt("Enter your first value"));
+      var secondvalue = Number(prompt("Enter your second value"));
+      var fullname = [
+        firstname.trim().toUpperCase() + " " + fathername.toUpperCase(),
+      ];
+      var fullinput = [
+        firstvalue + secondvalue,
+        firstvalue - secondvalue,
+        firstvalue * secondvalue,
+        firstvalue / secondvalue,
+      ];
+      var sum = [firstvalue + secondvalue];
+      var subtraction = [firstvalue - secondvalue];
+
+      if (firstvalue < secondvalue) {
+        alert("first value is less than second value");
+      } else {
+        alert("your sum is" + " " + sum);
+        alert("your subtraction is" + " " + subtraction);
+        alert("your product is " + " " + firstvalue * secondvalue);
+        alert("your reminder is " + " " + firstvalue / secondvalue);
+      }
+
+      alert(fullname + " " + "your final result is" + " " + " " + fullinput);
+    </script>
+  </body>
+</html>
